@@ -1,13 +1,27 @@
 body {
-  background-color: #ff0000;
-  color: #0000FF;
+  background-color: #f0f0f0;
+  color: #000000;
+  font-size: 16px;
 }
 
 nav {
   background-color: rgba(0,0,0,.5);
   float: left;
-  position: fixed;
+  position: absolute;
   width: 100%;
+  text-decoration: none;
+}
+
+a:active {
+  color: #0070BD;
+}
+a:link {
+  color: #0600bb; /*unvisited link*/
+  text-decoration: none;
+}
+
+a:hover {
+  color:#0070BC; /*mouse over*/
 }
 
 .logo {
@@ -21,6 +35,7 @@ nav {
 
 .medium-pic {
   width: 70%;
+
 }
 
 .left, .right {
@@ -41,12 +56,44 @@ li {
   float: right;
   padding: 30px;
 }
+figure {
+  font-size: 15px;
+  margin: 0;
+  font-style: italic;
+  font-color: black;
+}
+
+h1 {
+  font-size: 50px;
+  font-style: bold;
+  padding-top: 15px;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+}
 
 article {
   padding-top: 100px;
+  line-height: 1.5;
+  font-style: normal;
 }
 
 .container {
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
+}
+
+.story-text {
+  margin: 20px;
+  width: 100%;
+  line-height: 1.5;
 }
